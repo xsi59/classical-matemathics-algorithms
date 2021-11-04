@@ -15,11 +15,9 @@ elif algorithm_selection==2:
     n = int(input("Введите число для вычисления факториала: "))
     assert (0 <= n < 998),  'ожидалось целое число в диапазоне от 0 до 998'
 
-
-
 def main():
     if algorithm_selection == 1:
-        for  foo  in [fb.fibonacci_ver1,fb.fibonacci_ver2,fb.fibonacci_ver3]:
+        for  foo  in [fb.fibonacci_ver1,fb.fibonacci_ver2,fb.fibonacci_ver3,fb.fibonacci_ver4]:
             start_time = time.perf_counter()
             fib_number = foo(n)
             finish_time = time.perf_counter()
@@ -33,3 +31,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
